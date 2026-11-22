@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🛍️ ShopHub - Online Shopping Website</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="container">
+                <div class="row align-items-center py-3">
+                    <div class="col-lg-3">
+                        <h4 class="fw-bold mb-0">
+                            <i class="bi bi-bag-heart-fill text-primary"></i>
+                            ShopHub
+                        </h4>
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="input-group">
+
+                            <input type="text" class="form-control" placeholder="Search for products...">
+
+                            <button class="btn btn-light border">
+                                <label for="cat">category</label>
+                                <select name="cat" id="cat">
+                                    <option value="1">ELECTRONICS</option>
+                                    <option value="2">FASHION</option>
+                                    <option value="3">HOME AND KITCHEN</option>
+                                    <option value="4">SPORTS</option>
+                                    <option value="5">BOOKS</option>
+                                    <option value="6">BEAUTY</option>
+                                    <option value="7" selected>ALL CATEGORY</option>
+                                </select>
+                            </button>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-flex justify-content-end gap-4">
+                            <i class="bi bi-chat-dots fs-5"></i>
+                            <a href="../CART/cart.html" class="cart-link">
+
+                                <i class="bi bi-cart3"></i>
+
+                                <span id="cart-count">0</span>
+
+                            </a>
+                            <a href="../PROFILE/profile.html">
+                                <i class="bi bi-person-circle fs-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg bg-primary">
+                <div class="container">
+                    <div class="navbar-nav gap-4">
+
+                        <a class="nav-link nav-link-item text-white" href="home.html">
+                            <i class="bi bi-house-door"></i>
+                            Home
+                        </a>
+
+                        <a class="nav-link nav-link-item text-white" href="../ELECTRONICS/elec.html">
+                            <i class="bi bi-grid"></i>
+                            Categories
+                        </a>
+
+                        <a class="nav-link nav-link-item text-white" href="#best-deals">
+                            <i class="bi bi-percent"></i>
+                            Deals
+                        </a>
+
+                        <a href="#" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#newArrivals">
+                            New Arrivals
+                        </a>
+
+                        <a class="nav-link nav-link-item text-white" href="../ELECTRONICS/elec.html">
+                            Bestsellers
+                        </a>
+
+                        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#contactOffcanvas">
+                            Contact Us
+                        </a>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="card shadow card-2 my-3 mx-4 border-0">
+
+            <div class="row align-items-center p-4">
+
+                <!-- LEFT SIDE -->
+                <div class="col-lg-6">
+
+                    <h3 class="fw-bold">
+                        SUMMER SALE IS LIVE!
+                    </h3>
+
+                    <p class="fs-5">
+                        UP TO 50% OFF ON ALL PRODUCTS
+                    </p>
+
+                    <button class="btn btn-primary">
+                        SHOP NOW
+                    </button>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+                <div class="col-lg-6 text-center">
+
+                    <img src="../INDEX/card-img-1.png" class="img-fluid w-75" alt="Summer Sale">
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container-fluid my-3 mx-4">
+            <h4 class="fw-bold">
+                SHOP BY CATEGORY
+            </h4>
+            <div class="row mx-4">
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <a href="../ELECTRONICS/elec.html" class="text-decoration-none text-dark">
+                        <div class="card category-card">
+                            <div class="category-img">
+                                <img src="../images/e-1.webp" class="card-img-top" alt="Electronics">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">ELECTRONICS</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <a href="../FASHION/fashion.html" class="text-decoration-none text-dark">
+                        <div class="card category-card">
+                            <div class="category-img">
+                                <img src="../images/f-1.webp" class="card-img-top" alt="Fashion">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">FASHION</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <a href="../HOME&KITCHEN/h&k.html" class="text-decoration-none text-dark">
+                        <div class="card category-card">
+                            <div class="category-img">
+                                <img src="../images/h-1.webp" class="card-img-top" alt="Home & Kitchen">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">HOME & KITCHEN</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <a href="../BEAUTY/beauty.html" class="text-decoration-none text-dark">
+                        <div class="card category-card">
+                            <div class="category-img">
+                                <img src="../images/be-1.webp" class="card-img-top" alt="Beauty">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">BEAUTY</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <a href="../SPORTS/sports.html" class="text-decoration-none text-dark">
+                        <div class="card category-card">
+                            <div class="category-img">
+                                <img src="../images/s-1.webp" class="card-img-top" alt="Sports">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">SPORTS</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <a href="../BOOKS/books.html" class="text-decoration-none text-dark">
+                        <div class="card category-card">
+                            <div class="category-img">
+                                <img src="../images/b-1.webp" class="card-img-top" alt="Books">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">BOOKS</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid my-3">
+
+            <h4 class="fw-bold px-4" id="best-deals">
+                BEST DEALS 
+            </h4>
+
+            <div class="row g-4 px-4">
+
+                <!-- iPhone -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card product-card">
+
+                        <div class="product-img">
+                            <img src="../images/iphone.webp" alt="iPhone">
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone</h5>
+                            <p class="text-muted mb-2">Latest iPhone</p>
+                            <h6>₹79,999</h6>
+                            <div class="row g-2 mt-3">
+                               
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-info w-100" data-id="101" data-name="iPhone"
+                                        data-price="79999" data-image="../images/iphone.webp">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                 <div class="col-6">
+                                     <button type="button" class="btn btn-warning w-100" data-id="101" data-name="iPhone"
+                                        data-price="79999" data-image="../images/iphone.webp">
+                                       Buy now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Bag -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card product-card">
+
+                        <div class="product-img">
+                            <img src="../images/bag.jpg" alt="Bag">
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Bag</h5>
+                            <p class="text-muted mb-2">Stylish handbag</p>
+                            <h6>₹1,499</h6>
+                            <div class="row g-2 mt-3">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-info w-100" data-id="102" data-name="Hand Bag"
+                                        data-price="1499" data-image="../images/bag.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-warning w-100" data-id="102" data-name="Hand Bag"
+                                        data-price="1499" data-image="../images/bag.jpg">
+                                        Buy now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Headset -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card product-card">
+
+                        <div class="product-img">
+                            <img src="../images/headset.jpg" alt="Headset">
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <h5 class="card-title">Headset</h5>
+                            <p class="text-muted mb-2">Wireless headset</p>
+                            <h6>₹2,499</h6>
+                            <div class="row g-2 mt-3">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-info w-100" data-id="103" data-name="Headset"
+                                        data-price="2499" data-image="../images/headset.jpg">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-warning w-100" data-id="103" data-name="Headset"
+                                        data-price="2499" data-image="../images/headset.jpg">
+                                     Buy now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Shoes -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card product-card">
+
+                        <div class="product-img">
+                            <img src="../images/shoe.avif" alt="Shoes">
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <h5 class="card-title">Running Shoes</h5>
+                            <p class="text-muted mb-2">Comfortable shoes</p>
+                            <h6>₹2,999</h6>
+                            <div class="row g-2 mt-3">
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-info w-100" data-id="104"
+                                        data-name="Running Shoes" data-price="2999" data-image="../images/shoe.avif">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                                 <div class="col-6">
+                                 <button type="button" class="btn btn-warning w-100" data-id="104"
+                                        data-name="Running Shoes" data-price="2999" data-image="../images/shoe.avif">
+                                        Buy now
+                                    </button>
+                                
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+
+    <div id="cartToast" class="toast align-items-center text-white bg-success border-0"
+        role="alert">
+
+        <div class="d-flex">
+            <div class="toast-body" id="toastMessage">
+                Product added successfully!
+            </div>
+
+            <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast"></button>
+        </div>
+
+    </div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1"
+     id="newArrivals" aria-labelledby="newArrivalsLabel"
+     style="width: 50%;">
+
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="newArrivalsLabel">
+            New Arrivals
+        </h5>
+
+        <button type="button" class="btn-close"
+                data-bs-dismiss="offcanvas">
+        </button>
+    </div>
+
+    <div class="offcanvas-body d-flex justify-content-center align-items-center">
+
+        <div class="text-center">
+            <i class="bi bi-box-seam display-1 text-primary"></i>
+
+            <h3 class="mt-3">Products Coming Soon!</h3>
+
+            <p class="text-muted">
+                Exciting new products are on their way.
+                Stay tuned!
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<!-- CONTACT US OFFCANVAS -->
+
+<div class="offcanvas offcanvas-end contact-panel"
+     tabindex="-1"
+     id="contactOffcanvas"
+     aria-labelledby="contactOffcanvasLabel">
+
+    <!-- Header -->
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="contactOffcanvasLabel">
+            Contact Us
+        </h4>
+
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close">
+        </button>
+    </div>
+
+    <!-- Body -->
+    <div class="offcanvas-body">
+
+        <div class="contact-content text-center">
+
+            <!-- ShopHub Icon -->
+            <i class="bi bi-bag-heart-fill text-primary"
+               style="font-size: 65px;"></i>
+
+            <h2 class="mt-3 fw-bold">ShopHub</h2>
+
+            <p class="text-muted">
+                Your One-Stop Shopping Destination
+            </p>
+
+            <hr>
+
+            <!-- Owner Details -->
+            <div class="contact-section text-start">
+                <h5>
+                    <i class="bi bi-person-fill text-primary"></i>
+                    ShopHub Owner
+                </h5>
+
+                <p class="ms-4">
+                    Owner Name: <strong>RITESH  SHAH</strong>
+                </p>
+            </div>
+
+            <hr>
+
+            <!-- Email -->
+            <div class="contact-section text-start">
+                <h5>
+                    <i class="bi bi-envelope-fill text-primary"></i>
+                    Email Address
+                </h5>
+
+                <p class="ms-4">
+                    <a href="mailto:your@email.com">
+                        ShopHub@email.com
+                    </a>
+                </p>
+            </div>
+
+            <hr>
+
+            <!-- Outlet Locations -->
+            <div class="contact-section text-start">
+                <h5>
+                    <i class="bi bi-geo-alt-fill text-primary"></i>
+                    Our Outlet Locations
+                </h5>
+
+                <ul class="ms-3">
+                    <li>Outlet 1 - Delhi</li>
+                    <li>Outlet 2 - Mumbai</li>
+                    <li>Outlet 3 - Jaipur</li>
+                    <li>Outlet 4 - Bangalore</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <!-- Phone Numbers -->
+            <div class="contact-section text-start">
+                <h5>
+                    <i class="bi bi-telephone-fill text-primary"></i>
+                    Contact Numbers
+                </h5>
+
+                <p class="ms-4">
+                    <i class="bi bi-telephone"></i>
+                    <a href="tel:+911234567890">
+                        +91 12345 67890
+                    </a>
+                </p>
+
+                <p class="ms-4">
+                    <i class="bi bi-telephone"></i>
+                    <a href="tel:+919876543210">
+                        +91 98765 43210
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="home.js"></script>
+</body>
+
+</html>

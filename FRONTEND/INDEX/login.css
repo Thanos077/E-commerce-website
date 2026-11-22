@@ -1,0 +1,37 @@
+body{
+    background-image: url(bgone.png);
+}
+.card{
+      background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+
+    border-radius: 10px;
+}
+.form-label {
+    font-weight: bold;
+}
+.login-box {
+    width: 40%;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px !important;
+
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+
+.login-box .form-control {
+    height: 45px;
+}
+
+.login-box .mb-4 {
+    margin-bottom: 18px !important;
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+    }
+}

@@ -1,0 +1,21 @@
+body {
+    background-color: #f5f0fa;
+}
+
+.profile-card {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.profile-icon {
+    font-size: 65px;
+    color: #0d6efd;
+}
+
+.profile-card p {
+    margin: 20px 0;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛍️ ShopHub -login page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+        <form class="card shadow p-4 login-box" id="myform">
+
+            <div class="col mb-4">
+                <label for="email" class="form-label">E-MAIL</label>
+                <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter your email">
+                <small id="emailError" class="error text-danger"></small>
+            </div>
+
+            <div class="col mb-4">
+                <label for="password" class="form-label">PASSWORD</label>
+                <input type="password" id="password" class="form-control form-control-lg"
+                    placeholder="Enter your password">
+                <small id="passwordError" class="error text-danger"></small>
+            </div>
+            <div class="col mb-1">
+                <button type="reset" class="btn btn-warning w-100">
+                    RESET
+                </button>
+            </div>
+            <div class="col mb-1">
+                <button type="submit" class="btn btn-info w-100">
+                    SUBMIT
+                </button>
+            </div>
+            <div class="col mb-4 ">
+                <span style="font-weight: 700;">
+                HAVEN'T REGISTER YET ? 
+                <a href="index.html">SIGN IN</a>
+                </span>
+            </div>
+            
+
+        </form>
+    </div>
+
+
+
+<script type="module"  src="login.js"></script>
+</body>
+
+</html>

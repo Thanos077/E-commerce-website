@@ -1,0 +1,29 @@
+body {
+    background-image: url(bgone.png);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+
+    border-radius: 10px;
+}
+.form-label {
+    font-weight: bold;
+}
+.signup-box {
+    width: 65%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px !important;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+}
+@media (max-width: 768px) {
+    .signup-box {
+        width: 95%;
+        padding: 20px;
+    }
+}

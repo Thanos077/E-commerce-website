@@ -1,0 +1,16 @@
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Firebase credentials
+BACKEND/serviceAccountKey.json
+
+# Private data
+BACKEND/cart.json
+BACKEND/sign.json
+
+# Environment variables
+.env
