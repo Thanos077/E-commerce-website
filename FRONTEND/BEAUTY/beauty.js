@@ -26,7 +26,7 @@ document.getElementById("cat").addEventListener("change", function () {
 // Cart functionality
 import { auth } from "../INDEX/login.js";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://e-commerce-website-73io.onrender.com";
 
 const cartButtons = document.querySelectorAll(".btn-info, .btn-warning");
 

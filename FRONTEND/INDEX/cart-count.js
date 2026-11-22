@@ -4,7 +4,7 @@ import {
     onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://e-commerce-website-73io.onrender.com";
 
 onAuthStateChanged(auth, async (user) => {
 

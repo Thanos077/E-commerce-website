@@ -6,7 +6,7 @@ import {
     signOut
 } from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 
-const API_URL = "http://127.0.0.1:8001";
+const API_URL = "https://e-commerce-website-1-klcz.onrender.com";
 
 // CHECK LOGGED-IN USER
 

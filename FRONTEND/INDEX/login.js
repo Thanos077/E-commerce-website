@@ -215,7 +215,7 @@ if (form) {
             // sign.py is running on port 8001
 
             const response = await fetch(
-                "http://127.0.0.1:8001/user",
+                "https://e-commerce-website-1-klcz.onrender.com/user",
                 {
                     method: "GET",
 

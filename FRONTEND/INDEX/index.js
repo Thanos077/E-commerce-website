@@ -219,7 +219,7 @@ document.getElementById("myform").addEventListener("submit", async function (eve
 
             const token = await userCredential.user.getIdToken();
             // Save user in FastAPI
-            const response = await fetch("http://127.0.0.1:8001/user", {
+            const response = await fetch("https://e-commerce-website-1-klcz.onrender.com/user", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
