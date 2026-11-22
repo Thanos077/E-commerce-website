@@ -24,7 +24,15 @@ app.add_middleware(
 FILE_NAME = "sign.json"
 
 
-cred = credentials.Certificate("serviceAccountKey.json")
+if os.environ.get("FIREBASE_SERVICE_ACCOUNT"):
+    cred = credentials.Certificate(
+        json.loads(os.environ["FIREBASE_SERVICE_ACCOUNT"])
+    )
+else:
+    cred = credentials.Certificate("serviceAccountKey.json")
+
+if not firebase_admin._apps:
+    firebase_admin.initialize_app(cred)
 
 if not firebase_admin._apps:
     initialize_app(cred)

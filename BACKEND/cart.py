@@ -11,8 +11,15 @@ import os
 class QuantityUpdate(BaseModel):
     quantity: int
 
-cred = credentials.Certificate("serviceAccountKey.json")
-initialize_app(cred)
+if os.environ.get("FIREBASE_SERVICE_ACCOUNT"):
+    cred = credentials.Certificate(
+        json.loads(os.environ["FIREBASE_SERVICE_ACCOUNT"])
+    )
+else:
+    cred = credentials.Certificate("serviceAccountKey.json")
+
+if not firebase_admin._apps:
+    firebase_admin.initialize_app(cred)
 
 app=FastAPI()
 FILE_NAME = "cart.json"
