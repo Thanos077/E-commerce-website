@@ -1,7 +1,7 @@
 
 import { auth } from "../INDEX/login.js";
 
-const API_URL = "https://e-commerce-website-73io.onrender.com";
+const API_URL = "https://e-commerce-website-73io.onrender.com"
 
 const cartItems = document.getElementById("cart-items");
 const emptyCart = document.getElementById("empty-cart");

@@ -1,6 +1,6 @@
 import { auth } from "../INDEX/login.js";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://e-commerce-website-73io.onrender.com";
 
 async function updateCartCount(user) {
 

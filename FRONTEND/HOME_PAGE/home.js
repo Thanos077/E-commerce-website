@@ -5,7 +5,7 @@
 
 import { auth } from "../INDEX/login.js";
 
-const API_URL = "https://e-commerce-website-1-klcz.onrender.com";
+const API_URL = "https://e-commerce-website-73io.onrender.com";
 
 
 // =====================================
